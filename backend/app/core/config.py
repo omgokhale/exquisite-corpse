@@ -6,8 +6,10 @@ from pathlib import Path
 
 # Base paths
 BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
-DATA_DIR = BASE_DIR / "data"
-INDEXES_DIR = BASE_DIR / "indexes"
+
+# Check environment variables first, fall back to default paths
+DATA_DIR = Path(os.getenv("DATA_DIR", str(BASE_DIR / "data")))
+INDEXES_DIR = Path(os.getenv("INDEXES_DIR", str(BASE_DIR / "indexes")))
 
 # Data subdirectories
 RAW_IMAGES_DIR = DATA_DIR / "raw_images"
