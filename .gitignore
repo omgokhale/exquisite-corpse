@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.production.local
+.env.development.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+frontend/dist/
+
+# Data (keep structure, ignore contents for large files)
+data/raw_images/*.jpg
+data/raw_images/*.png
+data/normalized_images/*.jpg
+data/normalized_images/*.png
+data/segment_previews/*.jpg
+data/segment_previews/*.png
+data/outputs/*.png
+indexes/*.faiss
+indexes/*.pkl
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp

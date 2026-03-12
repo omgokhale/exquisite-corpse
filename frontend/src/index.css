@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  font-family: "Hedvig Letters Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Prevent browser zoom */
+html {
+  touch-action: manipulation;
+}
+
+/* Image transition animations */
+@keyframes blurIn {
+  0% {
+    filter: blur(20px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/* Sources modal animations */
+@keyframes imageBlurIn {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes letterPopIn {
+  0% {
+    opacity: 0;
+    filter: blur(4px);
+    transform: scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
+  }
+}
