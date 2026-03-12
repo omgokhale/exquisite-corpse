@@ -14,8 +14,8 @@ numpy==1.26.3
 
 # ML & embeddings
 open-clip-torch==2.24.0
-torch==2.1.2
-torchvision==0.16.2
+torch>=2.2.0
+torchvision>=0.17.0
 
 # Vector search
 faiss-cpu==1.7.4
